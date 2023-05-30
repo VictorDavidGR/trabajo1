@@ -67,14 +67,14 @@ class _ContenidoState extends State<Contenido> {
             child: Image.asset(
               'img/bot.png',
               fit: BoxFit.cover,
-              width: 150, // ajusta el ancho según tus necesidades
-              height: 150, // ajusta la altura según tus necesidades
+              width: 150,
+              height: 150,
             ),
           ),
 
           const SizedBox(height: 20,),
 
-          const Text('Bienvenido',
+          const Text('Bienvenido a MovilAPP',
             style: TextStyle(
               color: Colors.white,
               fontSize: 20,
@@ -99,7 +99,7 @@ class _ContenidoState extends State<Contenido> {
               );
             },
             child: const Text(
-              'Ingresar',
+              'Iniciar',
               style: TextStyle(
                 color: Colors.white,
                 fontWeight: FontWeight.w400,
