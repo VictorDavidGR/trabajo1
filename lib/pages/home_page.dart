@@ -17,7 +17,7 @@ class _HomePageState extends State<HomePage> {
       body: Stack(
         children: [
           Fondo(),
-          Center(child: Contenido())
+          SingleChildScrollView(child: Contenido())
         ],
       ),
     );
@@ -59,10 +59,13 @@ class _ContenidoState extends State<Contenido> {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 60),
-      child: Column(
+      child: 
+      
+      Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
+          const SizedBox(height: 250,),
           ClipOval(
             child: Image.asset(
               'img/bot.png',
@@ -109,8 +112,7 @@ class _ContenidoState extends State<Contenido> {
             ),
           ),
         ),
-
-          //boton
+        const SizedBox(height: 80,),
         ],
       ),
     );
